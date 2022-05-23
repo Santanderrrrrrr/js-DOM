@@ -1,0 +1,50 @@
+body {
+    height: 200vh;
+   }
+ 
+h1,
+   h2 {
+    font-family: roboto, sans-serif;
+    margin: 10px;
+   }
+ 
+h1 {
+    font-size: 26px;
+ 
+   }
+ 
+h2 {
+    font-size: 36px;
+   }
+ 
+.red {
+    color: red;
+   }
+ 
+.space {
+    text-transform: uppercase;
+   }
+
+.atRandom, .atRandomBaby{
+    
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    overflow-x: hidden;
+}
+.atRandom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.atRandomBaby{
+    border: 2px solid #222;
+    border-radius: 10px;
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+}

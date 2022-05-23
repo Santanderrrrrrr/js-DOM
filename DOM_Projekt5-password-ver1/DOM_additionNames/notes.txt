@@ -1,0 +1,2 @@
+When creating a function outside of the scope of the "addEventListener" function, 
+e.target will be the element the eventListener is being added to.

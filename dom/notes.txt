@@ -1,0 +1,108 @@
+let byQs = document.querySelector("first")
+undefined
+byQs
+null
+let byQs = document.querySelector("#first")
+undefined
+byQs
+<li id=​"first">​…​</li>​
+let byQs = document.getElementById("#first")
+undefined
+byQs
+null
+let byQs = document.getElementById("first")
+undefined
+byQs
+<li id=​"first">​…​</li>​
+let byQsa = document.querySelectorAll("li")
+undefined
+byQsa
+NodeList(5) [li#first, li.even, li, li.even, li]
+let byQsa = Array.from(byQsa)
+undefined
+byQsa
+(5) [li#first, li.even, li, li.even, li]0: li#first1: li.even2: li3: li.even4: lilength: 5[[Prototype]]: Array(0)
+let byQsaEven = document.querySelector("* li.even")
+undefined
+byQsaEven
+<li class=​"even">​…​</li>​
+byQsaEven = Array.from(byQsaEven)
+[]
+byQsaEven
+[]length: 0[[Prototype]]: Array(0)
+let byQsEven = document.querySelector(" .even")
+undefined
+byQsEven
+<li class=​"even">​…​</li>​
+let byQsEven = document.getElementByClassName("even")
+VM3338:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:25
+(anonymous) @ VM3338:1
+document.getElementsByClassName("even")
+HTMLCollection(2) [li.even, li.even]
+let byQsEven = document.getElementByClassName("even")
+VM3489:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:25
+(anonymous) @ VM3489:1
+let byQsEven = document.getElementByClassName(even)
+VM3535:1 Uncaught ReferenceError: even is not defined
+    at <anonymous>:1:47
+(anonymous) @ VM3535:1
+let byQsEven = document.getElementByClassName(.even)
+VM3550:1 Uncaught SyntaxError: Unexpected token '.'
+let byQsEven = document.getElementByClassName(".even")
+VM3567:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:25
+(anonymous) @ VM3567:1
+let byQsEven = document.getElementByClassName("even")[1]
+VM3591:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:25
+(anonymous) @ VM3591:1
+let byQsEven = document.getElementByClassName("even")[1]
+VM3596:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:25
+(anonymous) @ VM3596:1
+let all = [...document.querySelectorAll("li")]
+undefined
+all
+(5) [li#first, li.even, li, li.even, li]0: li#first1: li.even2: li3: li.even4: lilength: 5[[Prototype]]: Array(0)
+let byQsEven = Array. from(document.getElementByClassName("even"))
+VM3849:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:37
+(anonymous) @ VM3849:1
+const byQsEven = Array. from(document.getElementByClassName("even"))
+VM3892:1 Uncaught SyntaxError: Identifier 'byQsEven' has already been declared
+const byQsEven2 = Array. from(document.getElementByClassName("even"))
+VM3906:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:40
+(anonymous) @ VM3906:1
+const byQsEven2 = document.getElementByClassName("even")
+VM3956:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:28
+(anonymous) @ VM3956:1
+document.getElementsByClassName("even")
+HTMLCollection(2) [li.even, li.even]
+Array.from(document.getElementsByClassName("even"))
+(2) [li.even, li.even]
+const oneArray =[]
+undefined
+oneArray.push(Array.from(document.getElementsByClassName("even")))
+1
+oneArray
+[Array(2)]0: Array(2)0: li.even1: li.evenlength: 2[[Prototype]]: Array(0)length: 1[[Prototype]]: Array(0)
+for (const w of Array.from(document.getElementsByClassName("even"))){ oneArray.push(w)}
+3
+oneArray
+(3) [Array(2), li.even, li.even]0: (2) [li.even, li.even]1: li.even2: li.evenlength: 3[[Prototype]]: Array(0)
+oneArray.pop
+ƒ pop() { [native code] }
+const byQsEven3 = oneArray.unshift()
+undefined
+oneArray
+(3) [Array(2), li.even, li.even]0: (2) [li.even, li.even]1: li.even2: li.evenlength: 3[[Prototype]]: Array(0)
+byQsEven3
+3
+const byQsEven3 = oneArray.shift()
+undefined
+oneArray
+(2) [li.even, li.even]

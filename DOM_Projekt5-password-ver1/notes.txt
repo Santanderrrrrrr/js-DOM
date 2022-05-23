@@ -1,0 +1,8 @@
+the this keyword refers to the object to which an eventListener is added
+This works if the function is declared in the manner:
+    function(){
+
+    }
+but does not work if the function is declared in an arrow format.
+When one declares a function using the arrow format, this refers to 
+the window instead. This will return undefined.
