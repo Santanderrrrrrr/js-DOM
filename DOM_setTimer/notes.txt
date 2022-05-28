@@ -1,0 +1,2 @@
+the setinterval function takes a function parameter as well 
+as a parameter constituting of time in milliseconds.
