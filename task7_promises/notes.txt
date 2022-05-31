@@ -1,0 +1,57 @@
+>>Promises take 2 parameters: 
+    the resolve()
+    the reject()
+
+>>declaration of a new promise: 
+    const newPromise = new Promise((resolve, reject)=>{
+        if(condition){
+            resolve()
+        }else{
+            reject()
+        }
+    })
+
+>>Promises are then followed by a function that is met upon the promise
+  fulfilment:
+    <<declaration of promise>>
+    promise.then(()=>{
+        <<code to be run upon promise completion>>
+    })
+
+>>Promises also have a catch block that runs when a 
+  promise is rejected
+    <<declaration of promise>>
+    promise.catch(()=>{
+        <<code to be run upon promise rejection>>
+    })
+
+>>It's possible to chain .then and .catch together without having to
+  declare the function name as follows:
+    <<declaration of promise>>
+    promise.then(()=>{
+            <<code to be run upon promise completion>>
+        })
+        .catch(()=>{
+            <<code to be run upon the promise rejection>>
+        })
+
+>>Axios requests and the likes are not promises. They're functions that
+  return a promise that is either resolved or rejected.
+
+>>Promises like in reality are not guaranteed to be resolved.
+  What you get for sure is a "pending" notice. Thereafter, the results 
+  you receive are entirely dependent on the state of the internet and the
+  servers and clients in communication.
+>>A promise as shown above is simply a function whose result is based on the
+  environment it's in and is what is returned after a function request.
+
+>>one can chain multiple promises by simply returning 
+  a promise from the .then handling the resolved promise with a different request
+   and then handling it in yet another .then with a catch placed as the final link in 
+  the chain. This catch is called to action when either of the preceeding
+  .then's fails!
+
+
+
+
+In my year as a software developer, I have learned that effort speaks loudest. My place of work has been almost 6,000kms from the head offices of the Startup and in the year to date, with minimal face-to-face contact, both as a result of my remote workstation and the Covid pandemic, I still managed to meet all company deadlines. All this was done while working a job within the Polish Republic in the night, an hour (sometimes two) behind the company's timezone. Why effort? Because effort saw the company attain new clients again and again. The effort saw to it that my workmates never felt burdened. The effort saw to it that I came to love what I do- how could I not when I spend the majority of my waking hours doing it and the remaining hours dreaming about possible solutions? There has been difficulty. Mainly the feeling of alienation. There hasn't been too many backroom banter sessions over the past year but prioritization kept me in check. I bring to the table, not only the skill I possess but effort and discipline as well. I am looking forward to meeting in person and brushing over what needs to be done in order for our work together to begin. Kind regards.

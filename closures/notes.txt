@@ -1,0 +1,9 @@
+// Closure is a mechanism that 
+helps us access a given value outside of a function 
+and when that function is no longer active.
+// Closure - the variable exists in another function,
+although the function in 
+which the variable was created is no longer active.
+ // In program memory, a variable exists if it is referenced 
+ by a reference from 
+ another function. We can access it, but also change it.
