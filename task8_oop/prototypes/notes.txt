@@ -1,0 +1,3 @@
+>>prototypes are a lot like definitions.
+>>prototypes are objects from which one can draw 
+>>You can actually edit prototypes.

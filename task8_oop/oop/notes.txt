@@ -1,0 +1,57 @@
+>>classes can be considered as recipes for creation of elements.
+>>Factory functions:
+    functions hex(r,g b){
+        return '#' + ((1<<24)+(r<<16)+(g<<8)+(b)).toString(16).slice(1)
+    }
+  The difference between factory functions and constructor functions
+  lis in the use of the "this"keyword. the factory functions return 
+  objects while the constructor functions use this to declare 
+  properties and methods.
+  Constructor functions need the "new" keyword when creating 
+  instances.
+
+>>To construct we just use the this to set properties
+  If you refer to the object as this while constructing it, you're
+  referring to the window.
+>>Once you use new and create an object with the properties and then use this is when you
+  get the properties from the object.
+>>In essence, classes have properties and methods.
+  Class properties are defined in the constructor bounds only 
+  the constructor would be as a void method from java, not really
+  returning anything. An example is shown below:
+    class Cat{
+      constructor(parameter_1, parameter_2){
+        this.parameter_1 = parameter_1;
+        this.parameter_2 = parameter_2;
+      }
+    }
+
+  Methods are defined thereafter, only the difference is that there is no
+  typical function definition where you go:
+    function method(){
+
+    }
+  but instead you just hop to it as shown below:
+    method(){
+
+    }
+  So a complete class would probably look as shown below:
+    class Animal{
+      constructor(feet, species, skeleton){
+        this.feet = feet;
+        this.species = species;
+        this.skeleton = skeleton;
+      }
+      soundProduced(){
+
+      }
+      eatsMeat(){
+
+      }
+    }
+
+  And an instance of a class would look as follows:
+    const Cat = new Animal(4, "feline", "endoskeleton");
+
+  And getting methods called would be done as follows:
+    Cat.soundProduced()

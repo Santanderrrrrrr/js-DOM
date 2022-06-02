@@ -1,0 +1,10 @@
+>>Inheritance is the sharing of functionality between classes.
+>>Extending classes prevents the creation of duplicate code
+>>In an instance where the subclass doesn't have a method that's 
+  defined in the parent class, the subclass will use that in the
+  parent class. Otherwise, the method provided in the subclass will
+  be first in line for use even if it has the same name as the 
+  one in the parent class.
+>>Super is a reference to the super class.
+  Use super when trying to reference the properties from the 
+  parent class constructor without having to rewrite the code.

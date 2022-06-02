@@ -1,0 +1,11 @@
+>>You can call methods that have been declared within the same
+  class deifinition using the this keyword in the constructor jus availing new 
+  properties within the class constructor.
+>>Any use of the word this within the class definition, be it in 
+  the class method definitinos ot otherwiseis only to
+  declare properties in the class constructor.
+>>You can only access the properties declared using methods if the
+  method was called to action within the constructor bounds.
+>>Abstraction is the hiding of details or complexity using 
+  closures and showing only the essential information.
+>>
