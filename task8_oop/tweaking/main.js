@@ -1,3 +1,4 @@
+//encapsulation using well_accepted conventions
 class Animal{
     constructor(legs){
         this._legs = legs;
@@ -25,6 +26,7 @@ class Dog extends Animal{
         super(legs)
         let name = animalName
         this.getName = () => name
+        this.setName = (value) => name = value
     }
 }
 
@@ -34,3 +36,24 @@ console.log(cerberus.getName()) //logs value of the name property
 console.log(cerberus.getLegs()) //since the Dog class extends the 
                                 //parent animal class, it has access
                                 //to the parent getLegs function.
+
+
+class Snake extends Dog{
+    constructor(legs, animalName, animalLength, yearsLived){
+        super(legs, animalName);
+        let _length = animalLength;
+        let _yearsLived = yearsLived;
+        let _randomConstant = 10;
+
+        this.setLength = (value)=> _length = value          
+        
+
+        this.getLength = () => _length
+
+        this.setYearsLived=()=>{
+             _yearsLived = this.getLength()/_randomConstant;
+        }
+
+        this.getYearsLived = () => _yearsLived
+    }
+}
