@@ -1,0 +1,14 @@
+//In the wallet constructor, the wallet has it's value declared in the
+  scope of the construction in order to keep it encapsulated using closures.
+
+  The getWalletValue is declared in the constructor using this in order
+  allow external access and this is done in the constructor scope 
+  because only then can the getWalletValue method access the wallet
+  value.
+
+//The static keyword defines a static method or property for a 
+  class, or a class static initialization block. Neither static 
+  methods nor static properties can be called on instances of 
+  the class. Instead, they're called on the class itself.
+
+//Math.floor turns string values to numbers
